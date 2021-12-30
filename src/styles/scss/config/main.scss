@@ -1,0 +1,15 @@
+//reset styles
+@import './reset';
+
+//import fonts
+// font-family: 'Inter', sans-serif;
+// font-family: 'Merriweather', serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+//import components
+@import '../components/skills';
+
+body {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
