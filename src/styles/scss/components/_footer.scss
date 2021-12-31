@@ -1,0 +1,49 @@
+.footer {
+    height: 150px;
+
+    .wrap {
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__data,
+    .footer__school {
+        font-family: 'Inter', sans-serif;
+        font-size: 19px;
+        line-height: 50px;
+    }
+
+    .footer__school {
+        font-size: 20px;
+    }
+
+    .social__list {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+        .social__item {
+            width: 32px;
+            height: 32px;
+
+            &--instagram {
+                background: url('../../img/icons/social/instargam-icon.svg');
+            }
+
+            &--facebook {
+                background: url('../../img/icons/social/facebook-icon.svg');
+            }
+
+            &--twitter {
+                background: url('../../img/icons/social/twitter-icon.svg');
+            }
+
+            &--pinterest {
+                background: url('../../img/icons/social/pinterest-icon.svg');
+            }
+        }
+    }
+}
