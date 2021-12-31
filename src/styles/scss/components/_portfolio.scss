@@ -1,0 +1,64 @@
+.portfolio__btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    .portfolio__btn {
+        width: 220px;
+        height: 55px;
+        background: rgb(0, 0, 0);
+        color: #BDAE82;
+        border: 2px solid #BDAE82;
+
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+
+        &:hover {
+            color: rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+        &:not(:hover) {
+            color: #BDAE82;
+            transition: 0.3s;
+        }
+    }
+}
+
+.sample__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    .sample__item {
+        width: 450px;
+        height: 560px;
+
+        &--one {
+            background: url('../../img/backgrounds/portfolio-img-1.jpg');
+        }
+
+        &--two {
+            background: url('../../img/backgrounds/portfolio-img-2.jpg');
+        }
+
+        &--three {
+            background: url('../../img/backgrounds/portfolio-img-3.jpg');
+        }
+
+        &--four {
+            background: url('../../img/backgrounds/portfolio-img-4.jpg');
+        }
+
+        &--five {
+            background: url('../../img/backgrounds/portfolio-img-5.jpg');
+        }
+
+        &--six {
+            background: url('../../img/backgrounds/portfolio-img-6.jpg');
+        }
+    }
+}

@@ -357,13 +357,54 @@ textarea {
 }
 
 .wrap {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.section__title {
+  position: relative;
+  margin-bottom: 60px;
+  overflow-x: hidden;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #BDAE82;
+}
+
+.section__title::before {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  position: absolute;
+  right: 55%;
+  top: 39px;
+  content: '';
+  background: #BDAE82;
+}
+
+.section__title::after {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  position: absolute;
+  left: 55%;
+  top: 39px;
+  content: '';
+  background: #BDAE82;
 }
 
 .skills__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skills__list .skills__item {
@@ -410,7 +451,73 @@ textarea {
   line-height: 36px;
 }
 
+.portfolio__btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.portfolio__btn-list .portfolio__btn {
+  width: 220px;
+  height: 55px;
+  background: black;
+  color: #BDAE82;
+  border: 2px solid #BDAE82;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.portfolio__btn-list .portfolio__btn:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.portfolio__btn-list .portfolio__btn:not(:hover) {
+  color: #BDAE82;
+  transition: 0.3s;
+}
+
+.sample__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.sample__list .sample__item {
+  width: 450px;
+  height: 560px;
+}
+
+.sample__list .sample__item--one {
+  background: url("../../img/backgrounds/portfolio-img-1.jpg");
+}
+
+.sample__list .sample__item--two {
+  background: url("../../img/backgrounds/portfolio-img-2.jpg");
+}
+
+.sample__list .sample__item--three {
+  background: url("../../img/backgrounds/portfolio-img-3.jpg");
+}
+
+.sample__list .sample__item--four {
+  background: url("../../img/backgrounds/portfolio-img-4.jpg");
+}
+
+.sample__list .sample__item--five {
+  background: url("../../img/backgrounds/portfolio-img-5.jpg");
+}
+
+.sample__list .sample__item--six {
+  background: url("../../img/backgrounds/portfolio-img-6.jpg");
+}
+
 body {
+  box-sizing: border-box;
   color: white;
   background: black;
 }

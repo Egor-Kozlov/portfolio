@@ -8,8 +8,10 @@
 
 //import components
 @import '../components/skills';
+@import '../components/portfolio';
 
 body {
+    box-sizing: border-box;
     color: rgb(255, 255, 255);
     background: rgb(0, 0, 0);
 }
