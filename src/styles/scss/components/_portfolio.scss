@@ -1,3 +1,17 @@
+.section--portfolio {
+    .section__title {
+    &::before {
+        right: 60%;
+        top: 39px;
+    }
+
+    &::after {
+        left: 55%;
+        top: 39px;
+    }
+}
+}
+
 .portfolio__btn-list {
     display: flex;
     flex-wrap: wrap;

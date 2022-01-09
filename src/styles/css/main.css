@@ -448,40 +448,40 @@ textarea {
   padding-top: 100px;
 }
 
-.section__title {
+.title-container {
+  width: 50%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  display: flex;
   position: relative;
+}
+
+.title-container::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0%;
+  top: 39px;
+  content: '';
+  background: #BDAE82;
+}
+
+.section__title {
+  display: inline-block;
+  margin: 0 auto;
   margin-bottom: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+  z-index: 10;
   overflow-x: hidden;
   font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 80px;
-  text-align: center;
   color: #BDAE82;
-}
-
-.section__title::before {
-  display: block;
-  position: absolute;
-  width: 300px;
-  height: 2px;
-  position: absolute;
-  right: 55%;
-  top: 39px;
-  content: '';
-  background: #BDAE82;
-}
-
-.section__title::after {
-  display: block;
-  position: absolute;
-  width: 300px;
-  height: 2px;
-  position: absolute;
-  left: 55%;
-  top: 39px;
-  content: '';
-  background: #BDAE82;
+  background: black;
 }
 
 .skills__list {
@@ -536,6 +536,16 @@ textarea {
 
 .section--skills {
   margin-bottom: 8px;
+}
+
+.section--portfolio .section__title::before {
+  right: 60%;
+  top: 39px;
+}
+
+.section--portfolio .section__title::after {
+  left: 55%;
+  top: 39px;
 }
 
 .portfolio__btn-list {
@@ -683,8 +693,10 @@ textarea {
 }
 
 .section--contacts .wrap .form-container .section__title {
-  text-align: left;
   margin-bottom: 40px;
+  padding: 0px;
+  text-align: left;
+  background: none;
 }
 
 .section--contacts .wrap .form-container .section__title::before, .section--contacts .wrap .form-container .section__title::after {
