@@ -1,0 +1,14 @@
+.video-player{
+    height: 705px;
+    background: url(../../img/backgrounds/video-player.jpg) no-repeat center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__play {
+        width: 130px;
+        height: 130px;
+        background: url(../../img/icons/play_icon.svg) no-repeat center;
+    }
+}

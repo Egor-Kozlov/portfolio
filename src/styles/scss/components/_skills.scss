@@ -1,6 +1,8 @@
 .wrap { 
     max-width: 1440px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .section {
@@ -49,9 +51,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    // padding-left: 20px;
+    // padding-right: 35px;
 
     .skills__item {
-        max-width: 320px;
+        width: 320px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -94,4 +98,8 @@
             line-height: 36px;
         }
     }
+}
+
+.section--skills {
+    margin-bottom: 8px;
 }

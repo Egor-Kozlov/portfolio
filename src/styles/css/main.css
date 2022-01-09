@@ -356,9 +356,92 @@ textarea {
   padding: 0.2em 0;
 }
 
+.header .wrap {
+  background: url(../../img/backgrounds/header-background.jpg) no-repeat;
+  height: 90px;
+  background-position: center 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .wrap .logo {
+  width: 50px;
+  height: 50px;
+  background: url(../../img/icons/logo_unvisited.svg) no-repeat center;
+}
+
+.header .wrap .nav {
+  display: flex;
+}
+
+.header .wrap .language__btn {
+  border: none;
+  background: none;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.header .wrap .nav__list {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+.header .wrap .nav__list .nav__link {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.section--hero {
+  padding-top: 0px !important;
+}
+
+.section--hero .wrap {
+  padding: 0;
+  padding-top: 160px;
+  height: 820px;
+  background: url(../../img/backgrounds/header-background.jpg) no-repeat;
+  background-position: center -90px;
+}
+
+.section--hero .wrap .hero__container {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.section--hero .wrap .hero__container .hero__title {
+  margin-bottom: 10px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  color: #FFFFFF;
+}
+
+.section--hero .wrap .hero__container .hero__description {
+  margin-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section {
@@ -408,7 +491,7 @@ textarea {
 }
 
 .skills__list .skills__item {
-  max-width: 320px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,6 +532,10 @@ textarea {
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
+}
+
+.section--skills {
+  margin-bottom: 8px;
 }
 
 .portfolio__btn-list {
@@ -521,14 +608,19 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  margin-bottom: 100px;
   justify-content: center;
 }
 
 .price__list .price__item {
-  padding-top: 45px;
+  padding-top: 40px;
   width: 450px;
   height: 505px;
   border: 3px solid #BDAE82;
+}
+
+.price__list .price__item .btn--link {
+  margin: 0 auto;
 }
 
 .price__list .price__item .price__plan {
@@ -558,34 +650,80 @@ textarea {
   text-align: center;
 }
 
-.price__list .price__item .price__link-container {
-  width: 220px;
-  height: 55px;
-  margin: 0 auto;
-  background: #BDAE82;
+.video-player {
+  height: 705px;
+  background: url(../../img/backgrounds/video-player.jpg) no-repeat center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.price__list .price__item .price__link-container .price__link {
+.video-player__play {
+  width: 130px;
+  height: 130px;
+  background: url(../../img/icons/play_icon.svg) no-repeat center;
+}
+
+.section--contacts {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 60px;
+  background: url(../../img/backgrounds/contacts-background.jpg) no-repeat center #0000;
+}
+
+.section--contacts .wrap {
+  width: 1440px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section--contacts .wrap .form-container {
+  width: 450px;
+  margin-bottom: 195px;
+}
+
+.section--contacts .wrap .form-container .section__title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.section--contacts .wrap .form-container .section__title::before, .section--contacts .wrap .form-container .section__title::after {
+  display: none;
+}
+
+.section--contacts .wrap .form-container .form {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: black;
-  font-family: 'Inter', sans-serif;
+}
+
+.section--contacts .wrap .form-container .form .form__input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  border: 2px solid #bdae82;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 40px;
+  color: #bdae82;
 }
 
-.price__list .price__item .price__link-container .price__link:hover {
-  transition: .3s;
-  color: white;
+.section--contacts .wrap .form-container .form .form__input--textarea {
+  min-height: 100px;
+  margin-bottom: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
 }
 
-.price__list .price__item .price__link-container .price__link:not(hover) {
-  transition: .3s;
-  color: black;
+.section--contacts .wrap .form-container .form .form__input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
 }
 
 .footer {
@@ -607,14 +745,22 @@ textarea {
   line-height: 50px;
 }
 
+.footer .footer__data {
+  text-decoration: none;
+  color: white;
+}
+
 .footer .footer__school {
+  margin-left: 20px;
   font-size: 20px;
+  text-decoration: none;
+  color: white;
 }
 
 .footer .social__list {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
 }
 
 .footer .social__list .social__item {
@@ -638,8 +784,69 @@ textarea {
   background: url("../../img/icons/social/pinterest-icon.svg");
 }
 
-body {
+.footer__year {
+  padding: 0 16px;
+}
+
+.btn {
+  width: 220px;
+  height: 55px;
+  background: #bdae82;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  color: white;
+}
+
+.btn:not(hover) {
+  transition: 0.3s;
+  color: black;
+}
+
+.btn--link {
+  width: 220px;
+  height: 55px;
+  background: #bdae82;
+}
+
+.btn--link__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.btn--link__link:hover {
+  transition: 0.3s;
+  color: white;
+}
+
+.btn--link__link:not(hover) {
+  transition: 0.3s;
+  color: black;
+}
+
+* {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   color: white;
   background: black;
 }

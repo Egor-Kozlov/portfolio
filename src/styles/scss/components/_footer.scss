@@ -16,14 +16,22 @@
         line-height: 50px;
     }
 
+    .footer__data {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
     .footer__school {
+        margin-left: 20px;
         font-size: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
     }
 
     .social__list {
         display: flex;
         flex-direction: row;
-        gap: 15px;
+        gap: 20px;
 
         .social__item {
             width: 32px;
@@ -46,4 +54,8 @@
             }
         }
     }
+}
+
+.footer__year {
+    padding: 0 16px;
 }

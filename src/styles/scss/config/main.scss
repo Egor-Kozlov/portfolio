@@ -7,14 +7,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
 //import components
+@import '../components/header';
+@import '../components/hero';
 @import '../components/skills';
 @import '../components/portfolio';
 @import '../components/price';
+@import '../components/video';
 @import '../components/contacts';
 @import '../components/footer';
 
-body {
+//import elements 
+@import '../components/elements';
+
+* {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     color: rgb(255, 255, 255);
     background: rgb(0, 0, 0);
 }

@@ -1,0 +1,35 @@
+.section--hero {
+    padding-top: 0px !important;
+
+    .wrap {
+        padding: 0;
+        padding-top: 160px;
+        height: 820px;
+        background: url(../../img/backgrounds/header-background.jpg) no-repeat;
+        background-position: center -90px;
+
+        .hero__container {
+            max-width: 470px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+
+            .hero__title {
+                margin-bottom: 10px;
+                font-family: 'Merriweather', serif;
+                font-weight: bold;
+                font-size: 60px;
+                line-height: 120px;
+                color: #FFFFFF;
+            }
+
+            .hero__description {
+                margin-bottom: 25px;
+                font-family: "Inter", sans-serif;
+                font-size: 20px;
+                line-height: 40px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
