@@ -682,6 +682,7 @@ textarea {
 .video-player__play {
   width: 130px;
   height: 130px;
+  border: none;
   background: url(../../img/icons/play_icon.svg) no-repeat center;
   transition: 0.3s;
 }
@@ -843,6 +844,7 @@ textarea {
   line-height: 40px;
   text-align: center;
   color: #000;
+  border: none;
   transition: 0.3s;
 }
 
@@ -853,30 +855,21 @@ textarea {
 .btn--link {
   width: 220px;
   height: 55px;
-  background: #bdae82;
-}
-
-.btn--link__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
   text-decoration: none;
+  background: #bdae82;
   color: black;
+  border: none;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 40px;
+  transition: 0.3s;
 }
 
-.btn--link__link:hover {
-  transition: 0.3s;
+.btn--link:hover {
   color: white;
-}
-
-.btn--link__link:not(hover) {
-  transition: 0.3s;
-  color: black;
 }
 
 * {

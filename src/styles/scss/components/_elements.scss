@@ -8,6 +8,7 @@
   line-height: 40px;
   text-align: center;
   color: #000;
+  border: none;
   transition: 0.3s;
 
   &:hover {
@@ -18,28 +19,22 @@
 .btn--link {
   width: 220px;
   height: 55px;
-  background: #bdae82;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 40px;
+  background: #bdae82;
+  color: rgb(0, 0, 0);
+  border: none;
+
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  transition: 0.3s;
 
     &:hover {
-      transition: 0.3s;
       color: rgb(255, 255, 255);
     }
-
-    &:not(hover) {
-      transition: 0.3s;
-      color: rgb(0, 0, 0);
-    }
-  }
 }
+
