@@ -30,14 +30,10 @@
         font-size: 20px;
         line-height: 40px;
         text-align: center;
+        transition: 0.3s;
 
         &:hover {
             color: rgb(255, 255, 255);
-            transition: 0.3s;
-        }
-        &:not(:hover) {
-            color: #BDAE82;
-            transition: 0.3s;
         }
     }
 }

@@ -371,6 +371,11 @@ textarea {
   width: 50px;
   height: 50px;
   background: url(../../img/icons/logo_unvisited.svg) no-repeat center;
+  transition: 0.3s;
+}
+
+.header .wrap .logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .header .wrap .nav {
@@ -399,6 +404,16 @@ textarea {
   line-height: 50px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.header .wrap .nav__list .nav__link:hover {
+  transition: 0.3s;
+  color: #BDAE82;
+}
+
+.header .wrap .nav__list .nav__link:not(hover) {
+  transition: 0.3s;
+  color: #FFFFFF;
 }
 
 .section--hero {
@@ -566,16 +581,11 @@ textarea {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
+  transition: 0.3s;
 }
 
 .portfolio__btn-list .portfolio__btn:hover {
   color: white;
-  transition: 0.3s;
-}
-
-.portfolio__btn-list .portfolio__btn:not(:hover) {
-  color: #BDAE82;
-  transition: 0.3s;
 }
 
 .sample__list {
@@ -673,6 +683,11 @@ textarea {
   width: 130px;
   height: 130px;
   background: url(../../img/icons/play_icon.svg) no-repeat center;
+  transition: 0.3s;
+}
+
+.video-player__play:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .section--contacts {
@@ -762,11 +777,19 @@ textarea {
   color: white;
 }
 
+.footer .footer__data:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
 .footer .footer__school {
   margin-left: 20px;
   font-size: 20px;
   text-decoration: none;
   color: white;
+}
+
+.footer .footer__school:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .footer .social__list {
@@ -778,6 +801,11 @@ textarea {
 .footer .social__list .social__item {
   width: 32px;
   height: 32px;
+  transition: .3s;
+}
+
+.footer .social__list .social__item:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .footer .social__list .social__item--instagram {
@@ -796,6 +824,12 @@ textarea {
   background: url("../../img/icons/social/pinterest-icon.svg");
 }
 
+.footer .social__list .social__item .social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .footer__year {
   padding: 0 16px;
 }
@@ -809,16 +843,11 @@ textarea {
   line-height: 40px;
   text-align: center;
   color: #000;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  transition: 0.3s;
   color: white;
-}
-
-.btn:not(hover) {
-  transition: 0.3s;
-  color: black;
 }
 
 .btn--link {
