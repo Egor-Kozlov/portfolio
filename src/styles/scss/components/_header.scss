@@ -15,6 +15,7 @@
             height: 50px;
             background: url(../../img/icons/logo_unvisited.svg) no-repeat center;
             transition: 0.3s;
+            cursor: pointer;
 
             &:hover {
                 filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
@@ -27,13 +28,23 @@
         }
 
         .language {
-            &__btn {
+            &__btn,
+            &__slash {
                 border: none;
                 background: none;
                 font-family: "Inter", sans-serif;
                 font-size: 20px;
                 line-height: 50px;
                 color: #FFFFFF;
+            }
+
+            &__btn {
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    color: #BDAE82;
+                }
             }
         }
 

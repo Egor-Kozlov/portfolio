@@ -372,6 +372,7 @@ textarea {
   height: 50px;
   background: url(../../img/icons/logo_unvisited.svg) no-repeat center;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .header .wrap .logo:hover {
@@ -382,13 +383,22 @@ textarea {
   display: flex;
 }
 
-.header .wrap .language__btn {
+.header .wrap .language__btn, .header .wrap .language__slash {
   border: none;
   background: none;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
+}
+
+.header .wrap .language__btn {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.header .wrap .language__btn:hover {
+  color: #BDAE82;
 }
 
 .header .wrap .nav__list {
